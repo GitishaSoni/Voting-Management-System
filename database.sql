@@ -1,6 +1,13 @@
-create database node;
-use node;
-create table stu(name varchar(10), age int, pin int );
-select* from stu;
-insert into stu
-values("Gitisha", 19 ,1234);
+create database voting;
+use voting;
+CREATE TABLE voters (
+    id INT AUTO_INCREMENT PRIMARY KEY,     
+    voter_id VARCHAR(10) NOT NULL UNIQUE, 
+    name VARCHAR(100) NOT NULL,             
+    age INT NOT NULL,                       
+    address VARCHAR(255) NOT NULL,          
+    mobile VARCHAR(10) NOT NULL,            
+    dob DATE NOT NULL                        
+);
+
+select * from voters;

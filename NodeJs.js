@@ -7,7 +7,7 @@ const pool = createPool({
   host: 'localhost',
   user: 'root',
   password: 'root123', // Change to your MySQL root password
-  database: 'web_project', // Change to your database name
+  database: 'voting', // Change to your database name
   connectionLimit: 10,
 });
 
